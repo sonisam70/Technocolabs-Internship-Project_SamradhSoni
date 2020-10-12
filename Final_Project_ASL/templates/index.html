@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>ASL Prediction Samradh</title>
+<script>
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result)
+                        .width(600)
+                        .height(400);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+</script>
+<link rel="stylesheet" type="text/css" href="../static/index.css" />
+
+</head>
+<body>
+
+<div id="mymenu">
+<ul>
+<a href="https://sonisam70.github.io/Samradh/"> <li>My Portfolio</li></a>
+<a href="https://creditcarddefaultprediction-ss.herokuapp.com/"> <li>Mini Project 2<li></a>
+</ul></div>
+<center>
+
+{% if message %}
+    <br>
+    <div class="alert alert-danger">
+    <center><strong style="color: red;">{{ message }}</strong></center>
+    </div>
+{% endif %}
+
+{% if pred %}
+<div class="alert alert-success">
+    <center><strong style="color: green;">The predicted Alphabet is {{ pred }}</strong></center>
+</div>
+{% endif %}
+<br>
+
+
+<div id="data">
+        <center><h1>ASL Prediction </h1></center>
+            <p>American Sign Language (ASL) is the primary language used by many deaf <br>individuals in North America, and it is also used by hard-of-hearing and hearing individuals. <br>The language is as rich as spoken languages and employs signs made with the hand, along with facial gestures and bodily postures.</p>
+            
+			<div id="data1">
+			
+			<h3>Project Tasks</h3>
+            <ol>
+                <li>Examine the dataset</li>
+                <li>One-hot encode the data</li>
+                <li>Define the model</li>
+                <li>Compile the model</li>
+                <li>Train the model</li>
+                <li>Test the model</li>
+                <li>Visualize mistakes</li>
+            </ol>
+			</div>
+			
+		<!--	<div id="data2">
+			<form  class="form-horizontal" method="POST" enctype="multipart/form-data">
+		<input  class="but" class="btn btn-block btn-info" onchange="readURL(this);" type="file" name="image" placeholder="Upload Image">
+			
+			<input class="but"  type="submit" value="Predict">
+			
+			</form>
+			</div> -->
+		
+
+<form class="form-horizontal" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-6" style="margin-top:10px;">
+                        <input class="btn btn-block btn-info" onchange="readURL(this);" type="file" name="image" placeholder="Upload Image">
+                    </div>
+                    <div class="col-md-6" style="margin-top:10px;">
+                        <input type="submit" class="btn btn-primary btn-block" value="Predict">
+                    </div>
+                </div>
+            </form>
+		
+    </div>
+
+<div id="data3">
+<h2>Design by- Samradh Soni <h2> </div>
+
+<div id="data3">
+<h2>Internship At Technocolab,Indore </h2></div>
+
+</div>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+body
+{
+background-image:url('s23.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+}
+#mymenu
+{
+background-color:rgba(0,0,0,0.5);
+color:white;
+text-align:right;
+margin-top:-10px;
+font-family:Times New Roman;
+font-style:italic;
+}
+#mymenu ul li
+{
+display:inline-block;
+padding:15px;
+}
+a{
+	color:white;
+	text-decoration:None;
+}
+
+a:hover{
+	
+	color:red;
+	text-decoration:underline;
+	
+}
+#data
+ {
+width:70%;
+height:500px;
+background-color:rgba(0,0,0,0.6);
+margin-top:25px;
+border-radius:9px;
+color:white;
+box-shadow:5px 5px 5px white;
+ }
+ 
+ #data1
+ {
+width:45%;
+height:220px;
+background-color:rgba(128,225,225,0.5);
+margin-left:25px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:5px 5px 5px black;
+ }
+ 
+#data2
+ {
+width:45%;
+height:40px;
+background-color:rgba(128,225,225,0.5);
+margin-left:25px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:5px 5px 5px black;
+ }
+#data3
+ {
+width:100%;
+height:30px;
+background-color:rgba(0,0,0,0.5);
+margin-top:3px;
+border-radius:7px;
+color:white;
+ }
+ 
+h1{
+	font-style:italic;
+	font-family:TImes New Roman;
+}
+h3{
+	font-style:italic;
+	font-family:TImes New Roman;
+}
+h2{
+	font-style:italic;
+	font-family:TImes New Roman;
+}
+
+p{
+	font-style:italic;
+	font-family:TImes New Roman;
+	font-size:24px;
+}
+
+.but{
+	
+	margin-top:5px;
+	border-radius:5px;
+	
+}
